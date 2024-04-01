@@ -22,4 +22,31 @@ while True:
         print("Minētais skaitlis ir mazāks. Meiģini velreiz.")
 
 skaitlis()
+
+
+
+def skaitlis():
+    print("Uzmini skaitli no 1 līdz 100")
+    izvelies_skaitli = random.randint(1, 100)
+    while True:
+        minejums = input("Ievadi minēto skaitli (no 1 līdz 100) vai raksti 'ne', lai pārtrauktu spēli: ")
+        if minejums.lower() == "ne":
+            print("Labprāt spēlējam nākamreiz! Paldies par spēli!")
+            break
+        else:
+            minejums = int(minejums)
+            if minejums == izvelies_skaitli:
+                print("Apsveicu, tu uzminēji skaitli!")
+                atkartot = input("Vai vēlies spēli sākt vēlreiz? (jā/nē): ")
+                if atkartot.lower() == "jā":
+                    skaitlis()
+                else:
+                    print("Paldies par spēli!")
+                    break
+            elif minejums < izvelies_skaitli:
+                print("Minētais skaitlis ir lielāks. Mēģini vēlreiz.")
+            else:
+                print("Minētais skaitlis ir mazāks. Mēģini vēlreiz.")
+
+skaitlis() 
     
