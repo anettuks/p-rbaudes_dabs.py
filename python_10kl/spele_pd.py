@@ -6,7 +6,7 @@ izvelies_skaitli = random.randint(1, 100) #šī funkcija saglabā skaitļus no 1
 
 while True:
     
-    minejums = int(input("Ievadi minēto skaitli(no 1 līdz 100):"))
+    minejums = int(input("Ievadi skaitli(no 1 līdz 100):"))
     
     if minejums == izvelies_skaitli: #funkcija pārbauda vai lietotājs ir uzminējis skaitli
         print("Apsveicu tu uzminēji skaitli!") #ja spēlētājs uzminēja skaitli tad viņu apsveic
