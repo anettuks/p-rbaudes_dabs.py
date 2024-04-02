@@ -1,4 +1,4 @@
-def skaitlis():
+def random:
     print("Uzmini skaitli no 1 līdz 100") #ši funkcja parāda, kas lietotājm jādara.
     izvelies_skaitli = random.randint(1, 100)  #šī funkcija saglabā skaitļus no 1 līdz 100 tos nemainot
     while True:
