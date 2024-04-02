@@ -20,9 +20,8 @@ while True:
 
 
           break #šī funkcija pārtrauc spēli, lai spēletajs varētu spēli sākt no jauna  
+    
     elif minejums < izvelies_skaitli:  #šī funkcija pārbauda vai minējums ir lielāks vai mazāks
         print("Minētais skaitlis ir lielāks. Meiģini velreiz.")
     else:
         print("Minētais skaitlis ir mazāks. Meiģini velreiz.")
-
-skaitlis()
